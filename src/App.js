@@ -5,13 +5,11 @@ import WeatherForecast from "./components/WeatherForecast"
 export default function App() {
   //testing
   console.log(Weather)
+  
   const weather=Weather.map((element,index)=>{
     return (
       <div className="weather">
-      
         <WeatherForecast {...element} key={index}/>
-  
-      
       </div>
     );
   })
